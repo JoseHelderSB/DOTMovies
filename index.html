@@ -16,7 +16,7 @@
     <header>
         <!-- Nav -->
         <div class ="nav container">
-            <img src="img/logo.png" id="dot-logo" alt="">
+            <img src="img/logo.png" id="dot-logo" alt="logo">
             <!--Busca-->
             <form id="form">
                 <input type="search" placeholder="buscar filme" id="search" class="search">
@@ -27,12 +27,42 @@
                 <i class='bx bxs-heart' id="heart-icon"></i>
                 <i class='bx bx-cart' id="cart-icon"></i>
             </div>
+             <!--Carrinho-->
+            <div class="cart">
+                <h2 class="cart-title">Meu Carrinho</h2>
+                <!--conteudo do carrinho-->
+                <div class="cart-content">
 
+                    <div class="cart-box">
+                        <img src="https://image.tmdb.org/t/p/w1280/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg" alt="" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-product-title">Thor: Love and Thunder</div>
+                            <div class="car-price">$25</div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                         <!--Remover carrinho-->
+                        <i class='bx bxs-trash-alt cart-remove'></i>
+                     </div>
+                 </div>
+                 <!--Total-->
+                 <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- Botão de comprar-->
+                <button type="button" class="btn-buy">Finalizar Compra</button>
+                <!-- Fechar carrinho-->
+                <i class="bx bx-x" id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div>
 
         </div>
 
-    </header>
+    </main>
    
-    
+    <script src="script/script.js"></script>
 </body>
 </html>
